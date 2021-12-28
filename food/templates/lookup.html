@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form action="/lookup" method="post" onsubmit="false">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="foodname" placeholder="food" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">search</button>
+</form>
+
+<form action="/lookup" method="post" onsubmit="false" style="margin-top: 30px;">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="foodname" placeholder="ingredient" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">search</button>
+</form>
+{% endblock content%}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div>
+        <h1>{{food["title"]}}</h1>
+    </div>
+    <div>
+        <img src="{{image}}">
+    </div>
+    <div>
+        <h3>
+            {{food["nutrition"][0]["title"]}}: {{food["nutrition"][0]["amount"]}}{{food["nutrition"][0]["unit"]}}<br><br>
+            {{food["nutrition"][1]["title"]}}: {{food["nutrition"][1]["amount"]}}{{food["nutrition"][1]["unit"]}}<br><br>
+            {{food["nutrition"][2]["title"]}}: {{food["nutrition"][2]["amount"]}}{{food["nutrition"][2]["unit"]}}<br><br>
+            {{food["nutrition"][3]["title"]}}: {{food["nutrition"][3]["amount"]}}{{food["nutrition"][3]["unit"]}}<br><br>
+            {{food["nutrition"][4]["title"]}}: {{food["nutrition"][4]["amount"]}}{{food["nutrition"][4]["unit"]}}<br><br>
+        </h3>
+    </div>
+{% endblock content%}
